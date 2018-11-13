@@ -15,36 +15,52 @@
 <body>
     <div class="container h-100">
         <div class="row h-100 justify-content-center align-items-center">
-
-            <!-- Signup and Login Buttons -->
+            <!-- START Signup and Login Buttons -->
             <div id="beginButtonGroup">
                 <button type="button" class="btn btn-lg mx-1 btn-primary" id="signupButton">Sign Up</button>
                 <button type="button" class="btn btn-lg mx-1" id="loginButton">Log In</button>
             </div>
+            <!-- END Signup and Login Buttons -->
 
-            <!-- The Signup Form -->
+            <!-- START Signup Form -->
             <div id="signupForm" class="w-50">
                 <form>
+                    <!-- Username -->
+                    <div class="form-group">
+                        <label for="usernameIn">Username</label>
+                        <input class="form-control" type="text" id="usernameIn" placeholder="ironman1970" required>
+                    </div>
+                    <!-- Password -->
+                    <div class="form-group">
+                        <label for="passwordIn">Password</label>
+                        <input class="form-control" type="password" id="passwordIn" placeholder="password1234" required>
+                    </div>
+                    <!-- First Name -->
                     <div class="form-group">
                         <label for="firstNameIn">First Name</label>
                         <input class="form-control" type="text" id="firstNameIn" placeholder="Tony" required>
                     </div>
+                    <!-- Last Name -->
                     <div class="form-group">
                         <label for="lastNameIn">Last Name</label>
                         <input class="form-control" type="text" id="lastNameIn" placeholder="Stark">
                     </div>
                     <div class="row">
+                        <!-- Age -->
                         <div class="form-group col-7">
                             <label for="ageIn">Age</label>
                             <input class="form-control" type="number" id="ageIn" min="18" max="101" placeholder="48" required>
                         </div>
+                        <!-- Gender -->
                         <div class="form-group col">
                             <label for="genderForm">Gender</label>
                             <div id="genderForm">
+                                <!-- Male -->
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" id="maleButton" type="radio" value="Male" name="gender" checked>
                                     <label class="form-check-label" for="maleButton">Male</label>
                                 </div>
+                                <!-- Female -->
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" id="femaleButton" type="radio" value="Female" name="gender">
                                     <label class="form-check-label" for="femaleButton">Female</label>
@@ -52,53 +68,44 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Interests -->
                     <div class="form-group">
                         <label for="interests">Interests</label>
                         <input class="form-control" type="text" id="interestsIn" placeholder="Myself, Making Money, Spiderman">
                     </div>
+                    <!-- Make User -->
                     <button type="submit" class="btn btn-primary" id="submit-user">Make My Account</button>
+                    <!-- Login -->
                     <button type="button" class="btn" id="loginButton2">Login</button>
                 </form>
             </div>
-
-            <!-- The Login Form -->
-            <div id="loginForm">
+            <!-- END Signup Form -->
+            
+            <!-- START Login Form -->
+            <div id="loginForm" class="w-50">
                 <form>
+                    <!-- Username -->
                     <div class="form-group">
                         <label for="usernameIn">Username</label>
                         <input class="form-control" type="text" id="usernameIn" placeholder="ironman1970" required>
                     </div>
+                    <!-- Password -->
                     <div class="form-group">
                         <label for="passwordIn">Password</label>
                         <input class="form-control" type="password" id="passwordIn" placeholder="password1234" required>
                     </div>
+                    <!-- Login -->
                     <button type="submit" class="btn btn-primary" id="submit-user">Login</button>
+                    <!-- Signup -->
                     <button type="button" class="btn" id="signupButton2">Signup</button>
                 </form>
             </div>
+            <!-- END Login Form -->
         </div>
+        <!-- END Row -->
     </div>
-
-    <!--
-    <form id="commentForm" action="">
-        <label for="name">Name: </label><input type="text" id="name" placeholder="Name"><br>
-        <label for="comment">comment: </label><input type="text" id="comment" placeholder="Comment"><br>
-    </form>
-
-    <button id="postComment">Post Comment</button>
-    <button id="getComments">Get Comments</button>
-    <button id="deleteComments">Delete All</button>
-    <div id="json"></div>
-    <div id="done"></div>
-    <div id="comments"></div>
+    <!-- END Container -->
     
-    <form id="queryForm" action="">
-        <label for="query">Name: </label><input type="text" id="query" placeholder="Name"><br>
-    </form>
-    
-    <button id="userComments">Get Comments</button>
-    <div id="user_comments"></div>
-    -->
 </body>
 
 </html>
