@@ -5,6 +5,10 @@ html {
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   height: 100%;
+  background-image: url('../images/superman_heart.jpg');
+  background-position: center;
+  /*background-repeat: no-repeat;
+  background-size: cover;*/
 }
 
 a {
@@ -13,6 +17,12 @@ a {
 
 #signupForm, #loginForm {
   display: none;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid black;
+  margin-top: 30px;
+  margin-bottom: 5px;
 }
 
 .center-button {

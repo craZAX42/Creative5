@@ -35,21 +35,28 @@
                         <label for="passwordIn">Password</label>
                         <input class="form-control" type="password" id="passwordIn" placeholder="password1234" required>
                     </div>
-                    <!-- First Name -->
-                    <div class="form-group">
-                        <label for="firstNameIn">First Name</label>
-                        <input class="form-control" type="text" id="firstNameIn" placeholder="Tony" required>
-                    </div>
-                    <!-- Last Name -->
-                    <div class="form-group">
-                        <label for="lastNameIn">Last Name</label>
-                        <input class="form-control" type="text" id="lastNameIn" placeholder="Stark">
+                    <div class="row">
+                        <!-- First Name -->
+                        <div class="form-group col">
+                            <label for="firstNameIn">First Name</label>
+                            <input class="form-control" type="text" id="firstNameIn" placeholder="Tony" required>
+                        </div>
+                        <!-- Last Name -->
+                        <div class="form-group col">
+                            <label for="lastNameIn">Last Name</label>
+                            <input class="form-control" type="text" id="lastNameIn" placeholder="Stark">
+                        </div>
                     </div>
                     <div class="row">
                         <!-- Age -->
-                        <div class="form-group col-7">
+                        <div class="form-group col-2">
                             <label for="ageIn">Age</label>
                             <input class="form-control" type="number" id="ageIn" min="18" max="101" placeholder="48" required>
+                        </div>
+                        <!-- Image Url -->
+                        <div class="form-group col-7">
+                            <label for="imageIn">Image Url</label>
+                            <input class="form-control" type="url" id="imageURL" placeholder="">
                         </div>
                         <!-- Gender -->
                         <div class="form-group col">
@@ -85,7 +92,7 @@
                 </form>
             </div>
             <!-- END Signup Form -->
-            
+
             <!-- START Login Form -->
             <div id="loginForm" class="w-50">
                 <form>
@@ -110,7 +117,7 @@
         <!-- END Row -->
     </div>
     <!-- END Container -->
-    
+
 </body>
 
 </html>
