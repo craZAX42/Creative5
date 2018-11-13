@@ -14,3 +14,7 @@ a {
 #signupForm, #loginForm {
   display: none;
 }
+
+.center-button {
+  text-align: center;
+}

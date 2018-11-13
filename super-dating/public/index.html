@@ -19,8 +19,54 @@
                 <button type="button" class="btn btn-lg mx-1" id="signupButton">Sign Up</button>
                 <button type="button" class="btn btn-lg mx-1" id="loginButton">Log In</button>
             </div>
-            <div id="signupForm">Signup</div>
-            <div id="loginForm">Login</div>
+            <div id="signupForm" class="w-50">
+                <form>
+                    <div class="form-group">
+                        <label for="firstNameIn">First Name</label>
+                        <input class="form-control" type="text" id="firstNameIn" placeholder="Tony" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastNameIn">Last Name</label>
+                        <input class="form-control" type="text" id="lastNameIn" placeholder="Stark">
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-8">
+                            <label for="ageIn">Age</label>
+                            <input class="form-control" type="number" id="ageIn" min="18" max="101" placeholder="48" required>
+                        </div>
+                        <div class="form-group col">
+                            <label for="genderForm">Gender</label>
+                            <form id="genderForm">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" id="maleButton" type="radio" value="Male" name="gender" checked>
+                                    <label class="form-check-label" for="maleButton">Male</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" id="femaleButton" type="radio" value="Female" name="gender">
+                                    <label class="form-check-label" for="femaleButton">Female</label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="interests">Interests</label>
+                        <input class="form-control" type="text" id="interestsIn" placeholder="Myself, Making Money, Spiderman">
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="submit-user">Make My Account</button>
+                </form>
+            </div>
+
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="usernameIn">Username</label>
+                    <input class="form-control" type="text" id="usernameIn" placeholder="ironman1970" required>
+                </div>
+                <div class="form-group">
+                    <label for="passwordIn">Password</label>
+                    <input class="form-control" type="password" id="passwordIn" placeholder="password1234" required>
+                </div>
+                <button type="submit" class="btn btn-primary" id="submit-user">Login</button>
+            </form>
         </div>
     </div>
 
