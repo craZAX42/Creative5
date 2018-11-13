@@ -6,15 +6,32 @@ $(document).ready(function() {
         $("#loginButton").fadeOut(500);
     });
 
+    var $login = $('#loginForm');
+    var $signup = $("#signupForm");
     $("#signupButton").click(function() {
         setTimeout(function() {
-            $("#signupForm").fadeIn(500);
+            $signup.fadeIn();
         }, (500));
     });
+
     $("#loginButton").click(function() {
         setTimeout(function() {
-            $("#loginForm").fadeIn(500);
+            $login.fadeIn();
         }, (500));
-        
     });
+
+    $("#signupButton2").click(function() {
+        $login.fadeOut(500);
+        setTimeout(function() {
+            $signup.fadeIn();
+        }, (500));
+    })
+
+    $("#loginButton2").click(function() {
+        $signup.fadeOut(500);
+        setTimeout(function() {
+            $login.fadeIn();
+        }, (500));
+    })
+
 });
