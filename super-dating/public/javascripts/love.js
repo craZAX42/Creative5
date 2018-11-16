@@ -126,7 +126,7 @@ $(document).ready(function() {
             else {
                 console.log("Log me in!");
                 var jobj = JSON.stringify(data); // Convert data to string
-                sessionStorage.setItem("myself", jobj); // Save information
+                sessionStorage.setItem("myself", data); // Save information
                 document.location.href = "love.html"; // Move pages
             }
         });
@@ -142,8 +142,10 @@ function getAll() {
 
 function fillProfile() {
     var theHTML = '<div class="row justify-content-center" id="person-row">';
-    var me = sessionStorage.getItem("myself");
+    var me = JSON.parse(sessionStorage.getItem("myself"))[0];
     var firstName = me.firstName;
+    console.log("me: " + me);
+    console.log("first: " + firstName)
     var lastName = me.lastName;
     var interests = me.interests;
     var image = me.image;
