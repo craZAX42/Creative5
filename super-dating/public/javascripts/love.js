@@ -142,11 +142,11 @@ function getAll() {
 
 function getProfile() {
     $.getJSON(("/love"), function(data) {
-       fillPage() 
+       fillProfile(data) 
     });
 }
 
-function fillProfile() {
+function fillProfile(data) {
     var theHTML = '<div class="row justify-content-center" id="person-row">';
     var i = $("#firstNameIn").val();
     var user = data[i];
