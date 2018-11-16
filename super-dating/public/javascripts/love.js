@@ -140,22 +140,9 @@ function getAll() {
     });
 }
 
-function getProfile() {
-    $.getJSON(("/love"), function(data) {
-       fillProfile(data) 
-    });
-}
-
 function fillProfile(data) {
     var theHTML = '<div class="row justify-content-center" id="person-row">';
-    var i = $("#firstNameIn").val();
-    var user = data[i];
-    var firstName = user.firstName;
-    var lastName = user.lastName;
-    var interests = user.interests;
-    var bio = user.bio;
-    var image = user.image;
-    var username = user.username;
+    sessionStorage.get("myself");
     theHTML += '<div class="card col-3 individual-card" onclick="getPerson(' + username +
         ')"><img class="card-img-top" src="' + image +
         '" alt="User image"><div class="card-body d-flex flex-column"><h4 class="card-title">' +
