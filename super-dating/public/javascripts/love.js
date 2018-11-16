@@ -140,9 +140,9 @@ function getAll() {
     });
 }
 
-function fillProfile(data) {
+function fillProfile() {
     var theHTML = '<div class="row justify-content-center" id="person-row">';
-    var me = sessionStorage.get("myself");
+    var me = sessionStorage.getItem("myself");
     var firstName = me.firstName;
     var lastName = me.lastName;
     var interests = me.interests;
