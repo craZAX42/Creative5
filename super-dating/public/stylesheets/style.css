@@ -28,3 +28,16 @@ a {
 .center-button {
   text-align: center;
 }
+
+#heart_logo {
+  height: 30px;
+}
+
+#person-row {
+  margin-top: 10px;
+}
+
+.individual-card {
+  margin: 20px;
+  padding: 5px;
+}
