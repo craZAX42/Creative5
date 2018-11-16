@@ -142,7 +142,13 @@ function getAll() {
 
 function fillProfile(data) {
     var theHTML = '<div class="row justify-content-center" id="person-row">';
-    sessionStorage.get("myself");
+    var me = sessionStorage.get("myself");
+    var firstName = me.firstName;
+    var lastName = me.lastName;
+    var interests = me.interests;
+    var image = me.image;
+    var bio = me.bio;
+    var username = me.username;
     theHTML += '<div class="card col-3 individual-card" onclick="getPerson(' + username +
         ')"><img class="card-img-top" src="' + image +
         '" alt="User image"><div class="card-body d-flex flex-column"><h4 class="card-title">' +
