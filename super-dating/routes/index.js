@@ -21,10 +21,15 @@ router.get('/love', function(req, res, next) {
     console.log("In /love GET route...");
     var uname = req.query["uname"];
     var pword = req.query["pword"];
-    console.log("Uname: " + uname + " Pword: " + pword);
     var obj = {};
     if (uname && pword) {
         obj = { username: uname, password: pword };
+    }
+    else if (uname) {
+        obj = { username: uname };
+    }
+    else if (pword) {
+        obj = {password: pword };
     }
     User.find(obj, 
         function(err, userList) {

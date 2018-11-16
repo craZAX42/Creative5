@@ -27,30 +27,30 @@
                 <form>
                     <!-- Username -->
                     <div class="form-group">
-                        <label for="usernameIn">Username</label>
-                        <input class="form-control" type="text" id="usernameIn" placeholder="ironman1970" required>
+                        <label for="usernameIn">Username*</label>
+                        <input class="form-control" type="text" id="usernameIn" placeholder="ironman1970" required oninvalid="this.setCustomValidity()">
                     </div>
                     <!-- Password -->
                     <div class="form-group">
-                        <label for="passwordIn">Password</label>
+                        <label for="passwordIn">Password*</label>
                         <input class="form-control" type="password" id="passwordIn" placeholder="password1234" required>
                     </div>
                     <div class="row">
                         <!-- First Name -->
                         <div class="form-group col">
-                            <label for="firstNameIn">First Name</label>
+                            <label for="firstNameIn">First Name*</label>
                             <input class="form-control" type="text" id="firstNameIn" placeholder="Tony" required>
                         </div>
                         <!-- Last Name -->
                         <div class="form-group col">
-                            <label for="lastNameIn">Last Name</label>
-                            <input class="form-control" type="text" id="lastNameIn" placeholder="Stark">
+                            <label for="lastNameIn">Last Name*</label>
+                            <input class="form-control" type="text" id="lastNameIn" placeholder="Stark" required>
                         </div>
                     </div>
                     <div class="row">
                         <!-- Age -->
                         <div class="form-group col-2">
-                            <label for="ageIn">Age</label>
+                            <label for="ageIn">Age*</label>
                             <input class="form-control" type="number" id="ageIn" min="18" max="101" placeholder="48" required>
                         </div>
                         <!-- Image Url -->
@@ -60,7 +60,7 @@
                         </div>
                         <!-- Gender -->
                         <div class="form-group col">
-                            <label for="genderForm">Gender</label>
+                            <label for="genderForm">Gender*</label>
                             <div id="genderForm">
                                 <!-- Male -->
                                 <div class="form-check form-check-inline">
@@ -77,16 +77,17 @@
                     </div>
                     <!-- Interests -->
                     <div class="form-group">
-                        <label for="interestsIn">Interests</label>
-                        <input class="form-control" type="text" id="interestsIn" placeholder="Myself, Making Money, Spiderman">
+                        <label for="interestsIn">Interests*</label>
+                        <input class="form-control" type="text" id="interestsIn" placeholder="Myself, Making Money, Spiderman" required>
                     </div>
                     <!-- Bio -->
                     <div class="form-group">
                         <label for="bioIn">Tell Us About Yourself</label>
                         <textarea class="form-control" rows="4" cols="40" id="bioIn" placeholder="I am a multi-billionaire playboy. I having some moral dilemmas saving the world and am looking for someone who can help me find my inner chi so I can get back to work."></textarea>
                     </div>
+                    <p>Fields with an asterisk(*) are required.</p>
                     <!-- Make User -->
-                    <button type="button" class="btn btn-primary" id="submit-user">Make My Account</button>
+                    <button type="submit" class="btn btn-primary" id="submit-user">Make My Account</button>
                     <!-- Login -->
                     <button type="button" class="btn" id="loginButton2">Login</button>
                 </form>
@@ -107,7 +108,7 @@
                         <input class="form-control" type="password" id="passwordIn2" placeholder="password1234" required>
                     </div>
                     <!-- Login -->
-                    <button type="button" class="btn btn-primary" id="login-user">Login</button>
+                    <button type="submit" class="btn btn-primary" id="login-user">Login</button>
                     <!-- Signup -->
                     <button type="button" class="btn" id="signupButton2">Signup</button>
                 </form>
