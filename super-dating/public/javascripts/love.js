@@ -160,6 +160,8 @@ function fillProfile(data) {
         ')"><img class="card-img-top" src="' + image +
         '" alt="User image"><div class="card-body d-flex flex-column"><h4 class="card-title">' +
         firstName + " " + lastName + "</h4><h5 class='mt-auto'>Interests</h5><p>" + interests + "</p><h5 class='mt-auto'>About Me</h5><p>" + bio + "</p></div></div>";
+    theHTML += '</div>';
+    $("#profiles").append(theHTML);
 }
 
 function fillPage(data) {
