@@ -140,6 +140,28 @@ function getAll() {
     });
 }
 
+function getProfile() {
+    $.getJSON(("/love"), function(data) {
+       fillPage() 
+    });
+}
+
+function fillProfile() {
+    var theHTML = '<div class="row justify-content-center" id="person-row">';
+    var i = $("#firstNameIn").val();
+    var user = data[i];
+    var firstName = user.firstName;
+    var lastName = user.lastName;
+    var interests = user.interests;
+    var bio = user.bio;
+    var image = user.image;
+    var username = user.username;
+    theHTML += '<div class="card col-3 individual-card" onclick="getPerson(' + username +
+        ')"><img class="card-img-top" src="' + image +
+        '" alt="User image"><div class="card-body d-flex flex-column"><h4 class="card-title">' +
+        firstName + " " + lastName + "</h4><h5 class='mt-auto'>Interests</h5><p>" + interests + "</p><h5 class='mt-auto'>About Me</h5><p>" + bio + "</p></div></div>";
+}
+
 function fillPage(data) {
     var theHTML = '<div class="row justify-content-center" id="person-row">';
     for (var i = 0; i < data.length; i++) {
